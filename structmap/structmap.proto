@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package structmap;
+
+import "google/protobuf/descriptor.proto";
+
+option go_package = "github.com/trever-io/protoc-gen-go-structmap/structmap;structmap";
+
+extend google.protobuf.MessageOptions {
+  bool enable = 50000;
+}
